@@ -32,7 +32,30 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.noteItem {
+  border: solid 1px lightslategray;
+  width: 200px;
+  height: 200px;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: bisque;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notesCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
