@@ -1,11 +1,12 @@
-import { useSelector } from 'react-redux';
 import './App.css';
 import { CreateNote } from './components/createNote';
 import { ListNotes } from './components/listNotes';
+import { useAppSelector } from './hooks/hook';
 
 function App() {
 
-  const notas = useSelector(state => state.notas.notes)
+  const notas = useAppSelector(state => state.notas.notes)
+
 
   return (
     <div className="App">
